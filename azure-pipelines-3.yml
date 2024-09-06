@@ -27,7 +27,7 @@ stages:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
     pool:
-      name: linux_for_feed
+      name: linuxSeptember
 
     steps:
     - task: Maven@4
