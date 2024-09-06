@@ -18,7 +18,7 @@ variables:
   environmentName: 'emrahapp'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  #vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
@@ -27,7 +27,7 @@ stages:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
     pool:
-      vmImage: $(vmImageName)
+      name: linux_for_feed
 
     steps:
     - task: Maven@4
