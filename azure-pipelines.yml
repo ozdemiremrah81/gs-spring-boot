@@ -6,16 +6,19 @@
 trigger:
 - master
 
+pool:
+  name: linuxSeptember
+  
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: '67cc1fd2-c770-4988-8223-3544de7e14d'
   
   # Web app name
-  webAppName: 'java-spring-boot'
+  webAppName: 'emrahapp'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  #vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
