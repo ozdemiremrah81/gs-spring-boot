@@ -5,7 +5,8 @@
 
 trigger:
 - master
-
+pool:
+  name: linuxSeptember
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
@@ -18,8 +19,7 @@ variables:
   environmentName: 'emrahapp'
 
   # Agent VM image name
-  pool:
-  name: linuxSeptember
+ 
   #vmImageName: 'ubuntu-latest'
 
 stages:
