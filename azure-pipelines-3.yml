@@ -18,6 +18,8 @@ variables:
   environmentName: 'emrahapp'
 
   # Agent VM image name
+  pool:
+    name: linuxSeptember
   #vmImageName: 'ubuntu-latest'
 
 stages:
